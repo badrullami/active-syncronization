@@ -64,4 +64,4 @@ Sample Error Response
 
 .. code-block:: text
 
-    {"message":"beacon data was received"}
+    {"code":401, "error":"Unauthorized access"}
