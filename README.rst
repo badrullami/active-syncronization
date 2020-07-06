@@ -20,62 +20,20 @@ List Resource
 
 .. code-block:: text
 
-    /admin/api/v1/services
-
-GET
-+++++
-
-Returns a list of all current services tracked by Stashboard
-
-.. code-block:: bash
-
-   GET /admin/api/v1/services HTTP/1.1
-
-.. code-block:: js
-
-        {
-            "services": [
-                {
-                    "name": "Example Foo",
-                    "id": "example-foo",
-                    "description": "An explanation of this service"
-                    "url": "/api/v1/services/example-foo",
-                    "current-event": {
-                        'message': 'What an event!',
-                        'sid': 'ahJpc215d2Vic2VydmljZWRvd25yCwsSBUV2ZW50GA8M',
-                        'status': {
-                            'description': 'Hey, dude',
-                            'id': 'up',
-                            'image': '/images/status/tick-circle.png',
-                            'level': 'NORMAL',
-                            'name': 'Up',
-                            'url': '/statuses/up'
-                },
-                        'timestamp': 'Mon, 28 Jun 2010 22:17:06 GMT',
-                        'url': '/services/twilio/events/ahJpc215d2Vic2VydmljZWRvd25yCwsSBUV2ZW50GA8M'},
-
-                },
-                {
-                    "name": "Example Bar",
-                    "id": "example-bar",
-                    "description": "An explanation of this service"
-                    "url": "/api/v1/services/example-bar",
-                    "current-event": null,
-                }
-            ]
-        }
+    /v1/oBeaconMonitoring
 
 
 POST 
 ++++++
 
-Creates a new service (or updates an existing service) and returns the new service object.
+This method will receive data from cubeacon server that will be triggered
 
 ==============   ===============
 Param            Description
 ==============   ===============
-name             Name of the service 
-description      Description of service 
+floor            name or code of floor (string eg. floor01, floo02,...)
+lift             name or code of lift (string eg. )
+state            state of enter/exit beacon signal (boolean)
 ==============   ===============
 
 .. code-block:: text
