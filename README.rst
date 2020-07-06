@@ -12,7 +12,7 @@ This is list of required method/function that will push from cubeacon server int
 ==================      ===============
 Method                  Description
 ==================      ===============
-onBeaconMonitoring	    this method is used for receive information from cubeacon server/devices when enter/exit signal
+onBeaconMonitoring	    this method is used for receive information from cubeacon server/devices when enter/exit beacon signal.
 ==================      ===============
 
 List Resource
