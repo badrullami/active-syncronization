@@ -4,7 +4,7 @@ Active Syncronization
 
 The following are APIs for integration with existing applications or middleware from beacon devices (Cubeacon Reader AR25 and Cubeacon Card)
 
-Destination Services
+Services
 ----------
 
 This is list of required method/function that will push from cubeacon server into client.
@@ -20,7 +20,7 @@ url	         The URL of the specific service resource
 ==============   ===============
 
 ==============   ===============
-method         description
+Method         Description
 ==============   ===============
 onBeaconMonitoring	         this method is used for receive information from cubeacon server/devices when enter/exit signal
 ==============   ===============
