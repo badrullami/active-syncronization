@@ -20,7 +20,7 @@ List Resource
 
 .. code-block:: text
 
-    /v1/oBeaconMonitoring
+    /v1/onBeaconMonitoring
 
 
 POST 
@@ -32,13 +32,20 @@ This method will receive data from cubeacon server that will be triggered
 Param            Description
 ==============   ===============
 floor            name or code of floor (string eg. floor01, floo02,...)
-lift             name or code of lift (string eg. )
+lift             name or code of lift (string eg. lift01, lift02,... )
 state            state of enter/exit beacon signal (boolean)
 ==============   ===============
 
 .. code-block:: text
 
-   POST /admin/api/v1/services HTTP/1.1 name=New%20Service&description=A%20great%20service
+  curl -X POST \
+  {{endpoint}}/v1/onBeaconMonitoring \
+  -H 'content-type: application/json' \
+  -d '{
+        "floor": "floor01",
+        "lift": "lift02",
+        "state": true
+      }'
 
 .. code-block:: js
 
