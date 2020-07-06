@@ -19,11 +19,11 @@ current-event    The current event for the service
 url	         The URL of the specific service resource
 ==============   ===============
 
-==============   ===============
-Method         Description
-==============   ===============
-onBeaconMonitoring	         this method is used for receive information from cubeacon server/devices when enter/exit signal
-==============   ===============
+==================      ===============
+Method                  Description
+==================      ===============
+onBeaconMonitoring	    this method is used for receive information from cubeacon server/devices when enter/exit signal
+==================      ===============
 
 List Resource
 ~~~~~~~~~~~~~~~
