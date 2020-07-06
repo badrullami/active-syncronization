@@ -10,6 +10,16 @@ Destination Services
 This is list of required method/function that will push from cubeacon server into client.
 
 ==============   ===============
+Property         Description
+==============   ===============
+id	         The unique identifier by which to identify the service
+name             The name of the service, defined by the user
+description      The description of the web service
+current-event    The current event for the service
+url	         The URL of the specific service resource
+==============   ===============
+
+==============   ===============
 method         description
 ==============   ===============
 onBeaconMonitoring	         this method is used for receive information from cubeacon server/devices when enter/exit signal
