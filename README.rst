@@ -37,7 +37,7 @@ state            state of enter/exit beacon signal (boolean)
 ==============   ===============
 
 Sample cURL Request
-.. code-block:: curl
+.. code-block:: text
 
   curl -X POST \
   {{endpoint}}/v1/onBeaconMonitoring \
@@ -47,8 +47,7 @@ Sample cURL Request
         "lift": "lift02",
         "state": true
       }'
-
-sample Response
+      
 .. code-block:: js
 
         {
