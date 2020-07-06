@@ -37,28 +37,13 @@ state            state of enter/exit beacon signal (boolean)
 ==============   ===============
 
 Sample cURL Request
+~~~~~~~~~~~~~~~~~~
+
 .. code-block:: text
 
-  curl -X POST \
-  {{endpoint}}/v1/onBeaconMonitoring \
-  -H 'content-type: application/json' \
-  -d '{
-        "floor": "floor01",
-        "lift": "lift02",
-        "state": true
-      }'
-      
-.. code-block:: js
+    /admin/api/v1/services/{service}
 
-        {
-            "name": "New Service",
-            "id": "new-service",
-            "description": "A great service"
-            "url": "/api/v1/services/new-service",
-            "current-event": null,
-        }
-   
-
+The Service Instance resources represents an individual web service tracked by StashBoard
 
 Instance Resource
 ~~~~~~~~~~~~~~~~~~
