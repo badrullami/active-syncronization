@@ -36,7 +36,8 @@ lift             name or code of lift (string eg. lift01, lift02,... )
 state            state of enter/exit beacon signal (boolean)
 ==============   ===============
 
-.. code-block:: text
+Sample cURL Request
+.. code-block:: curl
 
   curl -X POST \
   {{endpoint}}/v1/onBeaconMonitoring \
@@ -47,6 +48,7 @@ state            state of enter/exit beacon signal (boolean)
         "state": true
       }'
 
+sample Response
 .. code-block:: js
 
         {
